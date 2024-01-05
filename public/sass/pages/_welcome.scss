@@ -1,0 +1,145 @@
+@use "../variables/variables" as *;
+.index_pad{
+    padding: 150px 0px;
+}
+.bg{
+    .page{
+        width: 70%;
+        margin-top: 330%;
+        margin: auto;
+        border-radius: 25px;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(7px);
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .para{
+            text-align: center;
+            h1{
+                font-size: x-large;
+                font-weight: bolder;
+                margin: 10px 0px;
+                color: $text_headers_color;
+            }
+        }
+        .image{
+            width: 200px;
+            height: 250px;
+            margin-bottom: 10px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .signup{
+                padding: 8px 30px;
+                border-radius: 12px;
+                border-color: $input_border_color;
+                border-style: solid;
+                color: $text_headers_color;
+                border-width: 0.1px;
+                background-color: transparent;
+                margin-right: 30px;
+                &:hover{
+                    a{
+                        color: rgb(255, 255, 255);
+                    }
+                    background-color: $text_headers_color;
+                    border-color: $text_headers_color;
+                }
+                a{
+                    color: $text_headers_color;
+                    text-decoration: none;
+                }
+            }
+            .login{
+                padding: 8px 30px;
+                border-radius: 12px;
+                border-color: $input_border_color;
+                border-style: solid;
+                color: $text_headers_color;
+                border-width: 0.1px;
+                background-color: transparent;
+                &:hover{
+                    a{
+                        color: rgb(255, 255, 255);
+                    }
+                    background-color: $text_headers_color;
+                    border-color: $text_headers_color;
+                }
+                a{
+                    color: $text_headers_color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 480px){
+    .index_pad{
+        padding: 200px 0px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .index_pad{
+        padding: 70px 0px;
+    }
+    .bg{
+        .page{
+            width: 60% ;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .index_pad{
+        padding:0px 0px;
+    }
+    .bg{
+        .page{
+            width: 60% ;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .index_pad{
+        padding: 100px 0px;
+    }
+    .bg{
+        .page{
+            width: 60% ;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .index_pad{
+        padding: 0px 0px;
+    }
+    .bg{
+        .page{
+            width: 60% ;
+        }
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .index_pad{
+        padding: 0px 0px;
+    }
+    .bg{
+        .page{
+            width: 40% ;
+        }
+    }
+}

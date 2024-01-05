@@ -1,0 +1,316 @@
+@use "../variables/variables" as *;
+
+.pad_50{
+      padding: 120px 0px;      
+}
+.mar_50{
+    margin-top: 0px;
+}
+.bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../img/Group 13 (1).svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130vh;
+        .center_all{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        height: 50%;
+        margin-bottom: 50px;
+        margin-top: 70px;
+            .Welcome{
+                margin: auto;
+                color: $text_headers_color;
+                margin-bottom: 30px;
+            }
+            .login_container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: auto;
+                border-radius: 25px;
+                box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(7px);
+                background-color: rgba(255, 255, 255, 0.3);
+                width: 90%;
+                padding: 20px 5px;
+                // margin-bottom: 150px;
+                    h1{
+                        text-align: center;
+                        font-size: xx-large;
+                        margin-bottom: 15px;
+                    }
+                    form{
+                        width: 80%;
+                        margin: auto;
+                        input{
+                            display: block;
+                            width: 92%;
+                            height: $inputs_height;
+                            margin-bottom: $space_between_inputs;
+                            border-radius: 15px;
+                            border-width: 0.1px;
+                            border-color: $input_border_color;
+                            border-style: solid;
+                            background-color: transparent;
+                            padding-left: 15px;
+                            margin-top: 10px;
+                            &:focus{
+                                border-width: 0.1px;
+                                outline-color: $text_headers_color;
+                                border-color: $text_headers_color;
+                                outline-style: solid;
+                            }
+                        }
+                        .forget_password{
+                            display: block;
+                            margin-left: 75px;
+                            margin-top: -25px;
+                            margin-bottom: 20px;
+                            color: $text_headers_color;
+                            text-decoration: none;
+                        }
+                        .check_box_label{
+                            display: inline-block
+                        }
+                        .check_box_btn{
+                            display: inline-block;
+                            width: 15px;
+                            height: 15px;
+                            background-color: $text_headers_color;
+                            accent-color:$text_headers_color;
+                            &:focus{
+                                outline: none;   
+                            }
+                        }
+                        .submit{
+                            padding: 8px 30px;
+                            border-radius: 12px;
+                            border-color: $input_border_color;
+                            border-style: solid;
+                            color: $text_headers_color;
+                            display: block;
+                            margin: auto;
+                            cursor: pointer;
+                            border-width: 0.1px;
+                            background-color: transparent;
+                            &:hover{
+                                color: rgb(255, 255, 255);    
+                                background-color: $text_headers_color;
+                                border-color: $text_headers_color;
+                            }
+                        }
+                    }
+                    .login_with_google{
+                        padding: 8px 30px;
+                        border-radius: 15px;
+                        border-color: $input_border_color;
+                        border-style: solid;
+                        border-width: 0.1px;
+                        font-size: large;
+                        margin-top: 10px;
+                        color: #000000;
+                        text-decoration: none;
+                        background-color: transparent;
+                        img{
+                            width: 20px;
+                            height: 20px;
+                            margin-left: 10px;
+                            margin-bottom: -4px;
+                        }
+                    }
+                    p{
+                        margin: auto;
+                        text-align: center;
+                        margin-top: 20px;
+                        width: 100%;
+                        a{
+                            color: $text_headers_color;
+                            text-decoration: none;
+                        }
+                    }
+                
+            }
+        }
+}
+
+
+
+@media only screen and (min-width: 480px){
+    .bg{
+        .center_all{
+            margin-top: 50%;
+            // margin-bottom: 50%;
+            .login_container{
+                form{
+                    .forget_password{
+                        margin-left: 175px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .bg{
+        height: 100vh;
+        .center_all{
+            margin-top: 0%;
+            // margin-bottom: 50%;
+            .login_container{
+                form{
+                    .forget_password{
+                        margin-left: 256px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .bg{
+        height: 100vh;
+        .center_all{
+            margin-top: 0%;
+            width: 70%;
+            // margin-bottom: 50%;
+            .login_container{
+                form{
+                    .forget_password{
+                        margin-left: 256px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .bg{
+        height: 100vh;
+        .center_all{
+            margin-top: 0%;
+            width: 70%;
+            // margin-bottom: 50%;
+            .login_container{
+                form{
+                    .forget_password{
+                        margin-left: 270px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .bg{
+        height: 100vh;
+        .center_all{
+            margin-top: 0%;
+            width: 60%;
+            // margin-bottom: 50%;
+            .login_container{
+                form{
+                    .forget_password{
+                        margin-left: 303px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .pad_50{
+        padding:50px 0px;
+        // padding-top: 5px;    
+    }
+    .mar_50{
+        margin-top: 70px !important;
+    }
+    .bg{
+        height: 100vh;
+        .center_all{
+            margin-top: 0%;
+            width: 35%;
+            // margin-bottom: 50%;
+            .login_container{
+                form{
+                    input{
+                        width: 97%;
+                    }
+                    .forget_password{
+                        margin-left: 202px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px){
+    .pad_50{
+        padding:50px 0px;
+        // padding-top: 5px;    
+    }
+    .mar_50{
+        margin-top: 70px !important;
+    }
+    .bg{
+        height: 100vh;
+        .center_all{
+            margin-top: 0%;
+            width: 35%;
+            // margin-bottom: 50%;
+            .login_container{
+                form{
+                    input{
+                        width: 97%;
+                    }
+                    .forget_password{
+                        margin-left: 218px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .pad_50{
+        padding:0px 0px;
+        // padding-top: 5px;    
+    }
+    .mar_50{
+        margin-top: 70px !important;
+    }
+    .bg{
+        height: 100vh;
+        .center_all{
+            margin-top: 0%;
+            width: 35%;
+            // margin-bottom: 50%;
+            .login_container{
+                form{
+                    input{
+                        width: 97%;
+                    }
+                    .forget_password{
+                        margin-left: 246px;
+                    }
+                }
+            }
+        }
+    }
+}

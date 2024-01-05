@@ -1,0 +1,102 @@
+@use "../variables/variables" as *;
+.header{
+    position: fixed;
+    .content{
+        width: 90px;
+        padding: 10px;
+        height: 60px;
+        background-image: url('../../img/logo1.svg');
+        background-position: center;
+        background-size: cover;
+    }
+    .logout{
+        margin-left: 13pc;
+        margin-top: -69px;
+        button{
+            padding: 8px 30px;
+            border-radius: 12px;
+            border-color: $input_border_color;
+            border-style: solid;
+            color: $text_headers_color;
+            // display: block;
+            // margin: auto;
+            border-width: 0.1px;
+            background-color: transparent;
+            &:hover{
+                color: rgb(255, 255, 255);    
+                background-color: $text_headers_color;
+                border-color: $text_headers_color;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (min-width: 480px){
+    .header{
+        .logout{
+            margin-left: 23pc;
+            margin-top: -69px;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .header{
+        .logout{
+            margin-left: 31pc;
+            margin-top: -69px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .header{
+        .logout{
+            margin-left: 41pc;
+            margin-top: -69px;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .header{
+        .logout{
+            margin-left: 43pc;
+            margin-top: -69px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .header{
+        .logout{
+            margin-left: 57pc;
+            margin-top: -69px;
+        }
+    }
+}
+@media only screen and (min-width: 1370px){
+    .header{
+        .logout{
+            margin-left: 78pc;
+            margin-top: -69px;
+        }
+    }
+}
+@media only screen and (min-width: 1360px){
+    .header{
+        .logout{
+            margin-left: 78pc;
+            margin-top: -69px;
+        }
+    }
+}
+@media only screen and (min-width: 1500px){
+    .header{
+        .logout{
+            margin-left: 88pc;
+            margin-top: -69px;
+        }
+    }
+}
