@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('FTRU',[RedirectController::class,'welcome'])->name('FTRU');
 Route::get('FTRU/home',[RedirectController::class,'intro'])->name('home')->middleware(['auth','user_verify']);
 //Register
-Route::get('FTRU/signup', [RedirectController::class,'register'])->name('Signup');
+Route::get('FTRU/signup', [RedirectController::class,'register'])->name('Signup')->middleware('guest');
 Route::post('FTRU/signup', [UserController::class,'handleRegister'])->name('new user');
 //login
 Route::get('FTRU/signin', [RedirectController::class,'login'])->name('Login');
@@ -43,6 +43,6 @@ Route::get('FTRU/resend OTP',[UserController::class, 'resendOTP'])->name('resend
 Route::get("FTRU/Wrong Route", [RedirectController::class, "handleWrongRoute"])->name("wrong_route");
 Route::get("FTRU/error", [RedirectController::class, "errors"])->name("error");
 
-Route::fallback(function () {
-    return redirect()->route('wrong_route')->withErrors("Oops! It seems like you've reached an incorrect destination");
-});
+// Route::fallback(function () {
+//     return redirect()->route('wrong_route')->withErrors("Oops! It seems like you've reached an incorrect destination");
+// });

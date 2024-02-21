@@ -42,6 +42,7 @@ class UserController extends Controller
             $user=User::create([
             'name' => $socialUser->getName(),
             'email' => $socialUser->getEmail(),
+            'email_verified_at'=>Carbon::now() ,
             'provider_id' => $socialUser->getId(),
             'provider_name' => $provider,
             'provider_token' => $socialUser->token,

@@ -163,7 +163,7 @@
   margin-bottom: 15px;
 }
 .bg .center_all .login_container form {
-  width: 80%;
+  width: 82%;
   margin: auto;
 }
 .bg .center_all .login_container form input {
@@ -336,7 +336,8 @@
     margin-top: 70px !important;
   }
   .bg {
-    height: 100vh;
+    height: 107vh;
+    width: 100%;
   }
   .bg .center_all {
     margin-top: 0%;
@@ -830,7 +831,7 @@
   margin-top: -69px;
 }
 .header .logout button {
-  padding: 8px 30px;
+  padding: 8px 26px;
   border-radius: 12px;
   border-color: #B3ABAB;
   border-style: solid;

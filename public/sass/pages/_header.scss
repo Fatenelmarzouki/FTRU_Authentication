@@ -13,7 +13,7 @@
         margin-left: 13pc;
         margin-top: -69px;
         button{
-            padding: 8px 30px;
+            padding: 8px 26px;
             border-radius: 12px;
             border-color: $input_border_color;
             border-style: solid;
@@ -23,12 +23,12 @@
             border-width: 0.1px;
             background-color: transparent;
             &:hover{
-                color: rgb(255, 255, 255);    
+                color: rgb(255, 255, 255);
                 background-color: $text_headers_color;
                 border-color: $text_headers_color;
             }
         }
-        
+
     }
 }
 
